@@ -7,17 +7,9 @@ angular.module('app')
     var pokemon = Math.floor(Math.random()*718) +1;
     return $http({
       method: 'GET',
-      url: 'http://pokeapi.co/api/v1/sprite/'+pokemon+'/'
+      url: 'http://pokeapi.co/api/v2/pokemon/'+pokemon+'/'
     });
   };
-
-  // factory.getPokemon = function() {
-  //   var pokemon = Math.floor(Math.random()*718) +1;
-  //   return $http({
-  //     method: 'GET',
-  //     url: 'http://pokeapi.co/api/v2/pokemon/'+pokemon+'/'
-  //   });
-  // };
 
   factory.getMoves = function() {
     var move = Math.floor(Math.random()*639) +1;

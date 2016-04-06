@@ -3,7 +3,7 @@ angular.module('app')
   $scope.title = 'Pokemon!!';
 
   $scope.getPokemon = function() {
-    httpFactory.getPokemon($scope.movieTitle)
+    httpFactory.getPokemon()
     .then(function(response){
       console.log(response);
       // console.log(response.data.forms[1]);
@@ -12,7 +12,7 @@ angular.module('app')
   }
 
   $scope.getMove = function() {
-    httpFactory.getMoves($scope.movieTitle)
+    httpFactory.getMoves()
     .then(function(response){
       console.log(response);
       $scope.move = response.data;

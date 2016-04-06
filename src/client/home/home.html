@@ -13,10 +13,12 @@
     <div class="row">
       <div ng-if="pokemon" class="col-xs-6">
         <h1>{{pokemon.name}}</h1>
-        <img src="http://pokeapi.co{{pokemon.image}}/">
+        <img src="{{pokemon.sprites.front_default}}">
       </div>
       <div ng-if="move" class="col-xs-6">
         <h1>{{move.name}}</h1>
+        <h3>Power: {{move.power}}</h3>
+        <h3>Accuracy: {{move.accuracy}}</h3>
       </div>
     </div>
   </section>
