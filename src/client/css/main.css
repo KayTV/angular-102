@@ -1,6 +1,12 @@
 body {
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b3/b5/01/b3b5017c06a693ceb7a6c5c279a5795d.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
 }
 
 a {
