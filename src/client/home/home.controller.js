@@ -6,7 +6,6 @@ angular.module('app')
     httpFactory.getPokemon($scope.pokemonName)
     .then(function(response){
       console.log(response);
-      // console.log(response.data.forms[1]);
       $scope.pokemon = response.data;
     })
   }
