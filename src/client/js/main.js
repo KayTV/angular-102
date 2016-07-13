@@ -5,5 +5,9 @@ angular.module('app', ['ngRoute'])
         templateUrl: 'home/home.html',
         controller: 'HomeController'
       })
+      .when('/pokemon_list', {
+        templateUrl: 'pokemon_list/pokemon_list.html',
+        controller: 'PokemonController'
+      })
       .otherwise({redirectTo: '/'});
     });
