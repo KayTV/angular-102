@@ -3,7 +3,7 @@ angular.module('app')
   $scope.title = 'Pokemon!!';
 
   $scope.getPokemon = function() {
-    httpFactory.getPokemon()
+    httpFactory.getPokemon($scope.pokemonName)
     .then(function(response){
       console.log(response);
       // console.log(response.data.forms[1]);

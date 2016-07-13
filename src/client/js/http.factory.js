@@ -3,8 +3,8 @@ angular.module('app')
   var factory = {};
   var movieId = null;
 
-  factory.getPokemon = function() {
-    var pokemon = Math.floor(Math.random()*718) +1;
+  factory.getPokemon = function(pokemon) {
+    // var pokemon = Math.floor(Math.random()*718) +1;
     return $http({
       method: 'GET',
       url: 'http://pokeapi.co/api/v2/pokemon/'+pokemon+'/'
