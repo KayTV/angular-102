@@ -19,4 +19,11 @@ angular.module('app')
     })
   }
 
+  $scope.savePokemon = function() {
+    httpFactory.savePokemon($scope.pokemon)
+    .then(function(response){
+      console.log('response', response);
+    })
+  }
+
 }]);

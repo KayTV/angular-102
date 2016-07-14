@@ -1,7 +1,6 @@
 angular.module('app')
 .factory('httpFactory', ['$http', function($http){
   var factory = {};
-  var movieId = null;
 
   factory.getPokemon = function(pokemon) {
     // var pokemon = Math.floor(Math.random()*718) +1;
@@ -18,6 +17,16 @@ angular.module('app')
       url: 'http://pokeapi.co/api/v2/move/'+move+'/'
     });
   };
+
+  factory.savePokemon = function(pokemon) {
+    console.log('hey');
+    return $http ({
+      method: 'POST',
+      url: '/pokemon',
+      data: {pokemon: pokemon}
+    });
+  };
+
   return factory;
 
 }]);
