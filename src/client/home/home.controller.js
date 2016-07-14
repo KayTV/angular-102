@@ -7,6 +7,7 @@ angular.module('app')
     .then(function(response){
       console.log(response);
       $scope.pokemon = response.data;
+      $scope.pokemonName = '';
     })
   }
 
