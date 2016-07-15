@@ -20,13 +20,6 @@ angular.module('app')
 
   factory.savePokemon = function(poke) {
     console.log('hey', poke.moves.slice(0,4));
-    // name: req.body.name,
-    //   imagefront: req.body.sprites.front_default,
-    //   imageback: req.body.sprites.back_default,
-    //   type: req.body.types[0].type.name,
-    //   move1: req.body.moves[0].move.name,
-    //   move2: req.body.moves[1].move.name,
-    //   move3: req.body.moves[2].move.name
     return $http ({
       method: 'POST',
       url: '/pokemon',

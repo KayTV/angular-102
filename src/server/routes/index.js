@@ -29,7 +29,6 @@ router.post('/pokemon', function(req, res, next) {
       message: 'I am a teapot'
     })
   })
-  // res.json({test: 'test'})
 })
 
 module.exports = router;
