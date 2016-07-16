@@ -31,4 +31,11 @@ router.post('/pokemon', function(req, res, next) {
   })
 })
 
+router.get('/my_pokemon', function(req, res, next) {
+  Pokemon().select()
+  .then(function(pokemon) {
+    res.json(pokemon);
+  })
+});
+
 module.exports = router;

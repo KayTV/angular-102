@@ -3,4 +3,12 @@
     <h1>{{ title }}</h1>
     <h3>Aspiring Pokemon Master</h3>
   </header>
+  <section>
+    <div ng-repeat="pokemon in pokemons">
+      <div class="col-xs-4">
+        <h4>{{pokemon.name}}</h4>
+        <img ng-src="{{pokemon.imagefront}}">
+      </div>
+    </div>
+  </section>
 </div>

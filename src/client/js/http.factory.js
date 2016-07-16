@@ -32,6 +32,13 @@ angular.module('app')
     });
   };
 
+  factory.myPokemon = function() {
+    return $http ({
+      method: 'GET',
+      url: '/my_pokemon'
+    })
+  }
+
   return factory;
 
 }]);
