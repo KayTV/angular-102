@@ -1,6 +1,6 @@
 angular.module('app')
 .controller('PokemonController', ['$scope', 'httpFactory', function($scope, httpFactory){
-  $scope.title = "KTV's Pokemon Go!!";
+  $scope.title = "KTV's Pokemon!!";
 
   function activate() {
     httpFactory.myPokemon()
