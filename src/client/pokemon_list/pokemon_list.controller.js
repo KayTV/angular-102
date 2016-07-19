@@ -10,4 +10,9 @@ angular.module('app')
   };
   activate();
 
+  $scope.setCurrentPokemon = function(id) {
+    httpFactory.setCurrentPokemon(id)
+      console.log(id);
+  };
+
 }]);

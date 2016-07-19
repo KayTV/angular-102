@@ -39,6 +39,23 @@ angular.module('app')
     })
   }
 
+  factory.getOnePokemon = function(id) {
+    return $http({
+      method: 'GET',
+      url: '/showpage/'+id
+    });
+  };
+
+  factory.getCurrentPokemon = function() {
+      return pokemonId;
+  }
+
+  factory.setCurrentPokemon = function(id) {
+    pokemonId = id;
+    console.log('pokemonId', pokemonId);
+    return pokemonId;
+  }
+
   return factory;
 
 }]);

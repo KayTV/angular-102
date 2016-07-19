@@ -38,4 +38,10 @@ router.get('/my_pokemon', function(req, res, next) {
   })
 });
 
+router.get('/showpage/:id', function(req, res, next) {
+  Pokemon().where('id', req.params.id).first().then(function(game){
+    res.json(game);
+  })
+});
+
 module.exports = router;
