@@ -28,7 +28,10 @@ a:hover {
 .showbutton {
   background-color: inherit;
   border-radius: 10px;
-  border: 3px black solid;
+  border: 3.5px black solid;
   box-shadow: 5px 5px 5px #0c84d7;
   padding: 10px;
+  margin: 10px;
+  height: 210px;
+  width: 350px;
 }

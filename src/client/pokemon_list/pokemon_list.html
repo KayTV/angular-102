@@ -6,11 +6,11 @@
   <section>
     <div ng-repeat="pokemon in pokemons">
       <div class="col-xs-4">
-        <button class="showbutton" ng-click="setCurrentPokemon(pokemon.id)"><a href="/#/showpage">
+        <a href="/#/showpage"><button class="showbutton" ng-click="setCurrentPokemon(pokemon.id)">
           <h2>{{pokemon.name}}</h2>
           <img ng-src="{{pokemon.imagefront}}">
           <h4>Type: {{pokemon.type}}</h4>
-        </a></button>
+        </button></a>
       </div>
     </div>
   </section>
