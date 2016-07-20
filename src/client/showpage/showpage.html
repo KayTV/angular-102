@@ -1,1 +1,15 @@
-<h1>{{pokemon.name}}</h1>
+<div class="container" style="text-align: center;">
+  <header>
+    <h1>{{title}} {{pokemon.name}}</h1>
+    <h3>Type: {{pokemon.type}}</h3>
+  </header>
+  <body>
+    <div class="col-xs-1">
+      <img ng-src="{{pokemon.imagefront}}">
+    </div>
+    <div class="col-xs-1">
+      <img ng-src="{{pokemon.imageback}}">
+    </div>
+
+  </body>
+</div>

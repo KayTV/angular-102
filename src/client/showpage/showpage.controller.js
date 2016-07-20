@@ -1,6 +1,6 @@
 angular.module('app')
 .controller('ShowpageController', ['$scope', 'httpFactory', function($scope, httpFactory){
-  $scope.title = "Show KTV's Pokemon!!";
+  $scope.title = "KTV's";
 
   function activate() {
     var id = httpFactory.getCurrentPokemon();
