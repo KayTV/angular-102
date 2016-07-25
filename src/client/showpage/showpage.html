@@ -11,6 +11,13 @@
       <img ng-src="{{pokemon.imageback}}">
     </div>
     <div class="col-xs-4">
+      <div class="row">
+        <input type="text" class="form-control" ng-model="cp">
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <h4>CP: {{cp}}</h4>
       <h4>Moves:</h4>
         <li>
           <ul>{{pokemon.move1}}</ul>
