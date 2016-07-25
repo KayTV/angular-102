@@ -8,12 +8,13 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 header {
   padding: 20px;
   margin-top: 55px;
+  text-align: center;
 }
 
 a {

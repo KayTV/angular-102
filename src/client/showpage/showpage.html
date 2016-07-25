@@ -1,4 +1,4 @@
-<div class="container" style="text-align: center;">
+<div class="container">
   <header>
     <h1>{{title}} {{pokemon.name}}</h1>
     <h3>Type: {{pokemon.type}}</h3>
@@ -10,13 +10,14 @@
     <div class="col-xs-1">
       <img ng-src="{{pokemon.imageback}}">
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-5 form-group">
       <div class="row">
-        <input type="text" class="form-control" ng-model="cp">
+        <label for="cpnum" class="control-label">CP Number: </label>
+        <input type="number" class="form-control" ng-model="cp" id="cpnum" style="width: 20%;">
         <button class="btn btn-primary">Save</button>
       </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-5">
       <h4>CP: {{cp}}</h4>
       <h4>Moves:</h4>
         <li>
