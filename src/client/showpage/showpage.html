@@ -4,14 +4,15 @@
     <h3>Type: {{pokemon.type}}</h3>
   </header>
   <body>
-    <div class="col-xs-1">
-      <img ng-src="{{pokemon.imagefront}}">
+    <div class="col-xs-2">
+      <img ng-src="{{pokemon.imagefront}}" style="width: 100%; height: 100%;">
     </div>
-    <div class="col-xs-1">
-      <img ng-src="{{pokemon.imageback}}">
+    <div class="col-xs-2">
+      <img ng-src="{{pokemon.imageback}}" style="width: 100%; height: 100%;">
     </div>
     <form class="form-inline">
-      <div class="col-xs-5" style="padding: 15px;">
+      <div class="col-xs-4">
+        <h2>Status Change?</h2>
         <div class="row form-group">
           <label for="cpnum" class="control-label">CP: </label>
           <input type="number" class="form-control" ng-model="cp" id="cpnum">
@@ -29,7 +30,7 @@
         </div>
       </div>
     </form>
-    <div class="col-xs-5" style="padding: 15px;">
+    <div class="col-xs-4" style="padding: 15px;">
       <section>
         <h2>Impressive Info</h2>
         <h4>CP: {{cp}}</h4>
